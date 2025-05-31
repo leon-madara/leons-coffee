@@ -1,0 +1,141 @@
+/* Customers.module.css */
+.pageContainer {
+    padding: 2rem;
+    background-color: #dfcaaa;
+    color: #333;
+    font-family: sans-serif;
+  }
+  
+  /* Section Titles */
+  .sectionTitle {
+    color: #005F73;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .subsectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Testimonials Section */
+  .testimonialContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 2rem;
+  }
+  
+  .testimonialCard {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 6rem;
+    height: 6rem;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    margin-top: -4rem;
+    /* border: 3px solid #fff; */
+    background-color: transparent;
+  }
+  
+  .customerName {
+    margin: 1rem 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .customerTitle {
+    display: block;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .testimonialText {
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  /* Loyalty Program Section */
+  .loyaltyCard {
+    background-color: #fff;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; 
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loyaltyTitle {
+    color: #D98D50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .loyaltyText {
+    margin-bottom: 1.5rem;
+  }
+  
+  .benefitsList {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .benefitsList li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  .joinButton {
+    background-color: #D98D50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .joinButton:hover {
+    background-color: #c17a40;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonialContainer {
+      flex-direction: column;
+    }
+    
+    .testimonialCard {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "espresso-drink",
+    "category": "Ready-Made Drink",
+    "name": "Golden Ratio Espresso",
+    "description": "Double shot of our signature Arabica blend - caramel sweetness with velvety smooth finish. Brewed at 93°C using Leon's original pressure formula.",
+    "price": 4.50,
+    "imageSrc": "/src/images/Products/arabicaCup.png",
+    "tags": ["Arabica", "espresso", "signature"]
+  },
+  {
+    "id": "robusta-shot",
+    "category": "Ready-Made Drink", 
+    "name": "Midnight Robusta",
+    "description": "Intense dark chocolate notes with earthy undertones. Double-shot extraction creates a creamy crema layer. Perfect after-dinner digestif.",
+    "price": 4.25,
+    "imageSrc": "/src/images/Products/robustaCup.png",
+    "tags": ["Robusta", "bold", "chocolate"]
+  },
+  {
+    "id": "liberica-latte",
+    "category": "Ready-Made Drink",
+    "name": "Liberica Cloud",
+    "description": "Silky oat milk latte featuring rare Liberica beans. Floral jasmine notes with a hint of tropical fruit. Topped with edible gold leaf.",
+    "price": 6.00,
+    "imageSrc": "/src/images/Products/libericaCup.png", 
+    "tags": ["Liberica", "luxury", "oat-milk"]
+  },
+  {
+    "id": "excelsa-coldbrew",
+    "category": "Ready-Made Drink",
+    "name": "Excelsa Nitro",
+    "description": "Cold-steeped for 18 hours then nitrogen infused. Tart raspberry notes with a crisp green apple finish. Served in chilled copper mugs.",
+    "price": 5.75,
+    "imageSrc": "/src/images/Products/excelsaCup.png",
+    "tags": ["Excelsa", "nitro", "refreshing"]
+  },
+  {
+    "id": "mountain-reserve",
+    "category": "Ready-Made Drink",
+    "name": "Mountain Reserve",
+    "description": "High-altitude Arabica/Robusta blend. Notes of toasted hazelnut and dark maple syrup. Brewed using volcanic stone filters for mineral balance.",
+    "price": 5.00,
+    "imageSrc": "/src/images/Products/mtReserveCup.png",
+    "tags": ["blend", "high-altitude", "complex"]
+  },
+  {
+    "id": "sunset-latte",
+    "category": "Ready-Made Drink",
+    "name": "Sunset Blend Latte",
+    "description": "Our darkest roast with caramelized vanilla notes. Combined with house-made lavender syrup and smoked sea salt topping.",
+    "price": 5.50,
+    "imageSrc": "/src/images/Products/sunsetBlendCup.png",
+    "tags": ["dark-roast", "vanilla", "signature"]
+  },
+  {
+    "id": "arabica-beans",
+    "category": "Home-Brew Beans",
+    "name": "Single-Origin Arabica",
+    "description": "Ethiopian Yirgacheffe - 12oz medium roast. Floral bergamot notes with lemon zest acidity. Optimal for pour-over brewing.",
+    "price": 18.00,
+    "imageSrc": "/src/images/Products/menuBagArabica.png",
+    "tags": ["Ethiopian", "floral", "medium-roast"]
+  },
+  {
+    "id": "robusta-beans",
+    "category": "Home-Brew Beans",
+    "name": "Volcanic Robusta",
+    "description": "Indonesian volcanic soil beans - 12oz dark roast. Bold tobacco notes with 2.7% natural caffeine content. Ideal for espresso blends.",
+    "price": 17.00,
+    "imageSrc": "/src/images/Products/menuBagRobusta.png",
+    "tags": ["Indonesian", "high-caffeine", "bold"]
+  },
+  {
+    "id": "liberica-beans", 
+    "category": "Home-Brew Beans",
+    "name": "Philippine Liberica",
+    "description": "Rare 12oz monsoon-processed beans. Distinctive jackfruit aroma with long smoky finish. Best for French press preparation.",
+    "price": 19.00,
+    "imageSrc": "/src/images/Products/menuBagLiberica.png",
+    "tags": ["rare", "tropical", "full-body"]
+  },
+  {
+    "id": "excelsa-beans",
+    "category": "Home-Brew Beans",
+    "name": "Lake Tanganyika Excelsa",
+    "description": "12oz light roast from Tanzanian lakeside farms. Tart tamarind notes with hibiscus tea-like finish. Perfect for cold brew experiments.",
+    "price": 18.50,
+    "imageSrc": "/src/images/Products/menuBagExcelsa.png",
+    "tags": ["Tanzanian", "tart", "experimental"]
+  },
+  {
+    "id": "mountain-blend",
+    "category": "Home-Brew Beans",
+    "name": "Mountain Reserve Blend",
+    "description": "12oz Arabica/Robusta hybrid. Balanced chocolate maltiness with black cherry undertones. Stone-ground compatible for Turkish coffee.",
+    "price": 19.50,
+    "imageSrc": "/src/images/Products/menuBagmtReserve.png",
+    "tags": ["blend", "versatile", "stone-ground"]
+  },
+  {
+    "id": "sunset-beans",
+    "category": "Home-Brew Beans",
+    "name": "Sunset Blend Beans",
+    "description": "12oz dark roast Guatamalan/Mexican blend. Molasses sweetness with campfire smokiness. Developed for French press and moka pots.",
+    "price": 18.75,
+    "imageSrc": "/src/images/Products/menuBagSunsetBlend.png",
+    "tags": ["dark-roast", "smoky", "after-dinner"]
+  }
+]

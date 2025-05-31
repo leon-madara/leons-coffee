@@ -1,0 +1,48 @@
+{
+    "summary": {
+      "title": "The story of Leon's Coffee",
+      "description": "is a tale of passion, precision, and mathematical perfection. Founded on principles of the golden ratio and scientific brewing methods, Leon's has transformed the ordinary coffee experience into something extraordinary. From a single shop to a beloved institution, our journey reflects a commitment to quality that has never wavered."
+    },
+    "scenes": [
+      {
+        "id": 1,
+        "thumbnail": "history1.png",
+        "image": "history1-!BG.png",
+        "alt": "Leon's first coffee shop",
+        "title": "The Beginning",
+        "description": "In 1975, Leon opened his first coffee shop with nothing but a passion for perfect coffee and a small inheritance from his grandmother. The shop was tiny, but his dedication to quality was enormous."
+      },
+      {
+        "id": 2,
+        "thumbnail": "history2.png",
+        "image": "history2-!BG.png",
+        "alt": "Leon experimenting with roasting",
+        "title": "The Perfect Roast",
+        "description": "Leon spent countless nights perfecting his roasting technique, using mathematical principles to achieve the golden ratio in coffee extraction. His notebooks filled with equations and tasting notes."
+      },
+      {
+        "id": 3,
+        "thumbnail": "history3.png",
+        "image": "history3-!BG.png",
+        "alt": "First loyal customers",
+        "title": "Building Community",
+        "description": "Word spread about Leon's exceptional coffee. Local professors, students, and coffee enthusiasts became regulars, creating a community centered around quality and conversation."
+      },
+      {
+        "id": 4,
+        "thumbnail": "history4.png",
+        "image": "history4-!BG.png",
+        "alt": "Expanding the business",
+        "title": "Growth & Innovation",
+        "description": "As demand grew, Leon invested in better equipment and began sourcing beans directly from farmers, establishing relationships that would define the company's commitment to sustainability."
+      },
+      {
+        "id": 5,
+        "thumbnail": "history5.png",
+        "image": "history5-!BG.png",
+        "alt": "Modern Leon's Coffee",
+        "title": "Today's Legacy",
+        "description": "Today, Leon's Coffee continues to honor its founder's vision while embracing modern techniques and sustainable practices, serving exceptional coffee to a new generation of enthusiasts."
+      }
+    ]
+  }

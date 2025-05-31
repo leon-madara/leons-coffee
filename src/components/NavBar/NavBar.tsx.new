@@ -1,0 +1,112 @@
+// src/components/NavBar.tsx
+import React, { useState, useEffect } from 'react'
+import { FiCoffee, FiShoppingCart, FiSearch } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
+import styles from './NavBar.module.css'
+import logo from '../../assets/logoCoffee.svg'
+import Cart from '../Cart/Cart'
+
+export const NavBar: React.FC = () => {
+    const [isScrolled, setIsScrolled] = useState(false)
+    const [isVisible, setIsVisible] = useState(true)
+    const [isCartOpen, setIsCartOpen] = useState(false)
+
+    useEffect(() => {
+        // Create our scroll observer
+        const handleScroll = () => {
+            // Check if we've scrolled past the threshold
+            const shouldBeFloating = window.scrollY > 10
+
+            // Only update state if there's a change to avoid unnecessary renders
+            if (shouldBeFloating !== isScrolled) {
+                setIsScrolled(shouldBeFloating)
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [isScrolled]) // Include isScrolled in the dependency array
+
+    const toggleCart = () => {
+        setIsCartOpen(!isCartOpen)
+    }
+
+    return (
+        <React.Fragment>
+            <nav
+                className={`${styles.navbar} ${isScrolled ? styles.floatingNav : ''}`}
+                style={{
+                    opacity: isVisible ? 1 : 0,
+                    transition: 'all 0.5s ease',
+                    transitionProperty: 'width, top, left, transform, background-color, box-shadow, border-radius, opacity',
+                    transitionDuration: '0.5s',
+                    transitionTimingFunction: 'ease'
+                }}
+            >
+                {/* Left Group - Logo */}
+                <div className={styles.navLogo}>
+                    {isScrolled ? (
+                        <img src={logo} alt="Coffee Shop Logo" className={styles.logoImg} />
+                    ) : (
+                        <FiCoffee className={styles.coffeeIcon} aria-label="coffee icon" />
+                    )}
+                </div>
+
+                {/* Center Group - Navigation Links */}
+                <div className={styles.navCenter}>
+                    <Link to="/">Home</Link>
+                    <Link to="/history">Our History</Link>
+                    <Link to="/menu">Menu</Link>
+                    <Link to="/events">Events</Link>
+                    <Link to="/locations">Locations</Link>
+                    <Link to="/customers">Customers</Link>
+                    <Link to="/contactus">Contact Us</Link>
+                </div>
+
+                {/* Right Group - Action Icons */}
+                <div className={styles.navRight}>
+                    <FiShoppingCart 
+                        className={styles.icon} 
+                        aria-label="cart icon"
+                        onClick={toggleCart}
+                        style={{ cursor: 'pointer' }}
+                    />
+                    <FiSearch className={styles.icon} aria-label="search icon" />
+                </div>
+            </nav>
+            
+            {isCartOpen && (
+                <div 
+                    style={{
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                        zIndex: 1000
+                    }}
+                    onClick={toggleCart}
+                >
+                    <div 
+                        style={{
+                            position: 'fixed',
+                            right: 0,
+                            top: 0,
+                            bottom: 0,
+                            width: '400px',
+                            backgroundColor: '#fff',
+                            boxShadow: '-2px 0 10px rgba(0, 0, 0, 0.1)',
+                            zIndex: 1001,
+                            padding: '20px',
+                            overflowY: 'auto'
+                        }}
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <Cart />
+                    </div>
+                </div>
+            )}
+        </React.Fragment>
+    )
+}

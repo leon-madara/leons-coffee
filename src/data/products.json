@@ -1,0 +1,123 @@
+[
+  {
+    "id": "espresso-drink",
+    "category": "Ready-Made Drink",
+    "name": "Golden Ratio Espresso",
+    "description": "A double shot of our signature Espresso—sweet caramel notes with an ultra‑smooth finish.",
+    "price": 4.50,
+    "currency": "USD",
+    "imageSrc": "/src/images/Products/arabicaCup.png",
+    "tags": ["Arabica", "espresso", "sweet"]
+  },
+  {
+    "id": "robusta-shot",
+    "category": "Ready-Made Drink",
+    "name": "Robusta Shot",
+    "description": "A strong, earthy Robusta double shot—bold flavor and chocolatey undertones.",
+    "price": 4.00,
+    "currency": "USD",
+    "imageSrc": "/src/images/Products/robustaCup.png",
+    "tags": ["Robusta", "espresso", "bold"]
+  },
+  {
+    "id": "liberica-latte",
+    "category": "Ready-Made Drink",
+    "name": "Liberica Latte",
+    "description": "A creamy latte made with single‑origin Liberica—fruity, floral, and delightfully smooth.",
+    "price": 5.00,
+    "currency": "USD",
+    "imageSrc": "/src/images/Products/libericaCup.png",
+    "tags": ["Liberica", "latte", "creamy"]
+  },
+  {
+    "id": "excelsa-coldbrew",
+    "category": "Ready-Made Drink",
+    "name": "Excelsa Cold Brew",
+    "description": "A refreshing nitro‑infused cold brew from Excelsa—bright acidity and tangy fruit notes.",
+    "price": 5.50,
+    "currency": "USD",
+    "imageSrc": "/src/images/Products/excelsaCup.png",
+    "tags": ["Excelsa", "cold brew", "tangy"]
+  },
+  {
+    "id": "arabica-beans",
+    "category": "Home-Brew Beans",
+    "name": "Leon's Arabica Beans",
+    "description": "12 oz. medium‑roast Arabica beans—balanced acidity with floral notes, perfect for pour‑over or espresso at home.",
+    "price": 18.00,
+    "currency": "USD",
+    "imageSrc": "/src/images/Products/menuBagArabica.png",
+    "tags": ["Arabica", "medium-roast", "floral"]
+  },
+  {
+    "id": "robusta-beans",
+    "category": "Home-Brew Beans",
+    "name": "Leon's Robusta Beans",
+    "description": "12 oz. dark‑roast Robusta beans—bold, earthy flavor with a chocolate finish, designed for a strong morning brew.",
+    "price": 17.00,
+    "currency": "USD",
+    "imageSrc": "/src/images/Products/menuBagRobusta.png",
+    "tags": ["Robusta", "dark-roast", "bold"]
+  },
+  {
+    "id": "liberica-beans",
+    "category": "Home-Brew Beans",
+    "name": "Leon's Liberica Beans",
+    "description": "12 oz. single‑origin Liberica beans—unique fruity and floral aromas, with a smooth, lingering finish.",
+    "price": 19.00,
+    "currency": "USD",
+    "imageSrc": "/src/images/Products/menuBagLiberica.png",
+    "tags": ["Liberica", "single-origin", "fruity"]
+  },
+  {
+    "id": "excelsa-beans",
+    "category": "Home-Brew Beans",
+    "name": "Leon's Excelsa Beans",
+    "description": "12 oz. light‑roast Excelsa beans—bright acidity with tart and fruity notes, perfect for a refreshing cold brew.",
+    "price": 18.50,
+    "currency": "USD",
+    "imageSrc": "/src/images/Products/menuBagExcelsa.png",
+    "tags": ["Excelsa", "light-roast", "citrus"]
+  },
+  // Newly added items:
+  {
+    "id": "mountain-reserve-cup",
+    "category": "Ready-Made Drink",
+    "name": "Mountain Reserve Coffee",
+    "description": "A rich, comforting coffee with high-altitude flavor notes—crafted for cozy moments. http://googleusercontent.com/image_generation_content/2",
+    "price": 4.75,
+    "currency": "USD",
+    "imageSrc": "/src/images/Products/mountainReserveCup.png",
+    "tags": ["Mountain Reserve", "rich", "cozy"]
+  },
+  {
+    "id": "mountain-reserve-beans",
+    "category": "Home-Brew Beans",
+    "name": "Mountain Reserve Beans",
+    "description": "12 oz. high-altitude Arabica beans—smooth, rich, and perfect for a comforting brew at home.",
+    "price": 19.00,
+    "currency": "USD",
+    "imageSrc": "/src/images/Products/menuBagmtReserve.jpg",
+    "tags": ["Mountain Reserve", "rich", "high-altitude"]
+  },
+  {
+    "id": "sunset-blend-cup",
+    "category": "Ready-Made Drink",
+    "name": "Sunset Blend Coffee",
+    "description": "Vibrant and bright, capturing the essence of a sunset—perfect for relaxing evenings. http://googleusercontent.com/image_generation_content/3",
+    "price": 5.00,
+    "currency": "USD",
+    "imageSrc": "/src/images/Products/sunsetBlendCup.png",
+    "tags": ["Sunset Blend", "vibrant", "relaxing"]
+  },
+  {
+    "id": "sunset-blend-beans",
+    "category": "Home-Brew Beans",
+    "name": "Sunset Blend Beans",
+    "description": "12 oz. beans with fruity and citrus notes—ideal for pour-over or cold brew to enjoy sunset vibes.",
+    "price": 18.50,
+    "currency": "USD",
+    "imageSrc": "/src/images/Products/menuBagSunsetBlend.jpg",
+    "tags": ["Sunset Blend", "citrus", "bright"]
+  }
+]

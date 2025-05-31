@@ -1,0 +1,45 @@
+[
+    {
+      "id": "mug",
+      "name": "Leon's Mug",
+      "price": 12.5,
+      "selected": false,
+      "imageSrc": "/src/images/Brewing Accessory/LeonMug.png"
+    },
+    {
+      "id": "pour-over",
+      "name": "Pour Over Kit",
+      "price": 24.75,
+      "selected": false,
+      "imageSrc": "/src/images/Brewing Accessory/PourOverKit.png"
+    },
+    {
+      "id": "grinder",
+      "name": "Coffee Grinder",
+      "price": 34.99,
+      "selected": false,
+      "imageSrc": "/src/images/Brewing Accessory/CoffeeGrinder.png"
+    },
+    {
+      "id": "thermos",
+      "name": "Travel Thermos",
+      "price": 28.5,
+      "selected": false,
+      "imageSrc": "/src/images/Brewing Accessory/TravelThermos.png"
+    },
+    {
+      "id": "travel-mug",
+      "name": "Travel Mug",
+      "price": 15.99,
+      "selected": false,
+      "imageSrc": "/src/images/Brewing Accessory/TravelMug.png"
+    },
+    {
+      "id": "travel-tumbler",
+      "name": "Travel Tumbler",
+      "price": 25.99,
+      "selected": false,
+      "imageSrc": "/src/images/Brewing Accessory/TravelTumbler.png"
+    }
+  ]
+  

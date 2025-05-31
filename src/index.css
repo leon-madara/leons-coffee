@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Global font settings */
+:root {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+}
+
+p, span, a, button {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+}
+
+/* Font weights */
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}

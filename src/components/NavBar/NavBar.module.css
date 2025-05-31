@@ -1,0 +1,142 @@
+.navbar {
+    position: fixed;
+    /* Change to fixed */
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Always keep it centered */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    /* let the pseudo-element show through */
+    padding: 1rem 2rem;
+    z-index: 10;
+    /* ensure navbar sits above page content */
+    transition: all 0.3s ease;
+    /* Focus on vertical movement and other visual properties */
+    transition-property: top, width, background-color, box-shadow, border-radius;
+}
+
+/* Remove the slideDown animation */
+
+/* Logo on the left */
+.navLogo {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    color: #EAD2AC;
+    /* 30% Soft Beige */
+    transition: color 1s ease;
+    font-weight: 700;
+}
+
+.logoImg {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.coffeeIcon {
+    width: 24px;
+    height: 24px;
+    color: rgb(247, 156, 46);
+}
+
+/* Centered navigation links */
+.navCenter {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.navCenter a {
+    color: #EAD2AC;
+    /* Soft Beige */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navCenter a:hover {
+    color: #ff9d4e;
+    font-weight: bold;
+    font-size: 1.01rem;
+}
+
+/* Right-side icons */
+.navRight {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navRight .icon {
+    color: #ff9d4e;
+    /* 10% Bright Orange */
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navRight .icon:hover {
+    color: #ff9d4e;
+    /* font-weight: bold; */
+    scale: 1.2;
+}
+
+/* Pseudo-element for blurred & darkened background image */
+.navbar::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('/background2.png') center/cover no-repeat;
+    /* updated path */
+    filter: blur(8px) brightness(0.7) contrast(1.1);
+    z-index: -1;
+    /* place behind navbar content */
+    transition: all 0.5s ease;
+    /* Make sure these specific properties transition smoothly */
+    transition-property: width, top, left, transform, background-color, box-shadow, border-radius;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+/* Floating navigation styles */
+.floatingNav {
+    position: fixed;
+    top: 1rem;
+    /* This controls the vertical "detaching" effect */
+    width: 95%;
+    /* transform: translateX(-50%);  Keep this for proper centering */
+    margin: 0;
+    /* Remove margin since we're using transform */
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    /* Add this line for Safari support */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Remove the animation property */
+    transition: all 0.5s ease;
+    transition-property: top, width, background-color, box-shadow, border-radius;
+    /* Remove transform from transition properties since we want it to stay centered */
+}
+
+.floatingNav::before {
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.floatingNav .navLogo,
+.floatingNav .navCenter a {
+    color: hsl(189, 58%, 15%);
+}
+
+.floatingNav .icon {
+    color: hsl(12, 54%, 31%);
+}

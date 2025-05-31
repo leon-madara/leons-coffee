@@ -1,0 +1,112 @@
+/* ContactUs.module.css */
+.contactContainer {
+    background-color: #dfcaaa;
+    padding: 3rem 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .mainTitle {
+    color: #005F73;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contactContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 768px) {
+    .contactContent {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    
+    .formSection,
+    .infoSection {
+      flex: 1;
+    }
+  }
+  
+  /* Form Section Styles */
+  .sectionTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .formGroup {
+    margin-bottom: 1.25rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .inputField,
+  .messageField {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .messageField {
+    resize: vertical;
+  }
+  
+  .submitButton {
+    background-color: #005F73;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submitButton:hover {
+    background-color: #00465a;
+  }
+  
+  /* Info Section Styles */
+  .infoCard {
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .infoGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .infoGroup:last-child {
+    margin-bottom: 0;
+  }
+  
+  .infoTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .infoText {
+    margin: 0.25rem 0;
+    line-height: 1.5;
+    color: #555;
+  }
+  

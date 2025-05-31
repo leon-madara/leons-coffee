@@ -1,0 +1,56 @@
+.container {
+    @apply min-h-screen bg-[#f4f1ec] px-6 py-16 font-serif bg-[url('/textures/paper.png')] bg-fixed;
+  }
+  
+  .hero {
+    @apply text-center max-w-3xl mx-auto mb-12;
+  }
+  
+  .heroTitle {
+    @apply text-4xl md:text-5xl text-[#4a3c2c] font-bold mb-3;
+  }
+  
+  .heroText {
+    @apply text-base text-[#6a5d4d];
+  }
+  
+  .locationsGrid {
+    @apply max-w-6xl mx-auto;
+  }
+  
+  .locationCards {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+  
+  .locationCard {
+    @apply bg-[#fff8f0] p-6 rounded-lg border border-[#d4c2ae] shadow-md;
+  }
+  
+  .imageContainer {
+    @apply mb-4;
+  }
+  
+  .imagePlaceholder {
+    @apply bg-[#f5ede3] p-6 rounded flex items-center justify-center text-[#a48b71];
+  }
+  
+  .locationName {
+    @apply text-xl font-semibold text-[#4a3c2c] mb-2;
+  }
+  
+  .locationDetails {
+    @apply text-sm text-[#5a4d3f];
+  }
+  
+  .label {
+    @apply font-medium text-[#8b735a];
+  }
+  
+  .hoursWeekend {
+    @apply italic text-[#8c6b52];
+  }
+  
+  .footer {
+    @apply text-center mt-16 text-[#b7a493] text-xs;
+  }
+  

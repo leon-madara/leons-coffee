@@ -1,0 +1,132 @@
+/* --- Container & Hero --- */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #dfcaaa;
+  /* Soft Beige */
+  min-height: calc(100vh - 70px);
+  /* account for navbar */
+  padding: 3.6rem 2rem 1.8rem;
+  /* reduced padding */
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+  max-width: 100%;
+  margin: 3.6rem auto;
+  gap: 20px;
+}
+
+/* --- Left Column --- */
+.left {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tagline {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #005F73;
+  /* Deep Teal */
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.taglineTwo {
+  font-size: 18px;
+  color: rgb(62, 39, 35);
+  /* Dark coffee */
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.shopButton {
+  background-color: #D98D50;
+  /* Burnt Orange */
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+
+.shopButton:hover {
+  background-color: #9c5e2b;
+  font-size: 1.2rem;
+}
+
+/* --- Right Column Wrapper --- */
+.right {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  /* same as frame size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Circle Frame --- */
+.circleFrame {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url('/background3.png') center center/cover no-repeat;
+  /* updated path */
+  position: relative;
+  z-index: 1;
+  transition: transform 0.4s ease;
+  filter: blur(8px) brightness(0.7) contrast(1.1);
+}
+
+.shrinkFrame {
+  transform: scale(0.3);
+}
+
+/* --- Cup Image --- */
+.cupImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: width 0.4s ease;
+}
+
+.growCup {
+  width: 400px;
+  filter: drop-shadow(0 0 40px rgb(175, 105, 35));
+  transition: width 0.4s ease, filter 0.4s ease;
+}
+
+/* --- Responsive adjustments --- */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .left {
+    text-align: left;
+    margin-bottom: 0;
+    max-width: 48%;
+  }
+
+  .right {
+    max-width: 48%;
+  }
+}
