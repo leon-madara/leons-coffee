@@ -4,7 +4,7 @@
     "name": "Arabica Espresso",
     "description": "Rich caramel notes with a smooth, velvety finish. Our signature espresso.",
     "price": 4.5,
-    "imageSrc": "/images/Products/arabicaCup.png",
+    "imageSrc": "/src/images/Products/arabicaCup.png",
     "category": "drink"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Vanilla Latte",
     "description": "Smooth espresso with steamed milk and a hint of vanilla sweetness.",
     "price": 5.25,
-    "imageSrc": "/images/Products/robustaCup.png",
+    "imageSrc": "/src/images/Products/robustaCup.png",
     "category": "drink"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Caramel Macchiato",
     "description": "Espresso with foamed milk and Leon's homemade caramel drizzle.",
     "price": 5.75,
-    "imageSrc": "/images/Products/libericaCup.png",
+    "imageSrc": "/src/images/Products/libericaCup.png",
     "category": "drink"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Cold Brew",
     "description": "Smooth, low-acidity coffee brewed cold for 14 hours. Refreshingly bold.",
     "price": 4.75,
-    "imageSrc": "/images/Products/excelsaCup.png",
+    "imageSrc": "/src/images/Products/excelsaCup.png",
     "category": "drink"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Mocha",
     "description": "Rich espresso with steamed milk and premium dark chocolate.",
     "price": 5.5,
-    "imageSrc": "/images/Products/mtReserveCup.png",
+    "imageSrc": "/src/images/Products/mtReserveCup.png",
     "category": "drink"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Americano",
     "description": "Espresso shots diluted with hot water for a rich cup similar to drip coffee.",
     "price": 4.0,
-    "imageSrc": "/images/Products/sunsetBlendCup.png",
+    "imageSrc": "/src/images/Products/sunsetBlendCup.png",
     "category": "drink"
   },
   {
@@ -52,7 +52,7 @@
     "name": "Arabica Beans",
     "description": "Our signature arabica beans with notes of caramel and chocolate. 12oz bag.",
     "price": 14.5,
-    "imageSrc": "/images/Products/menuBagArabica.png",
+    "imageSrc": "/src/images/Products/menuBagArabica.png",
     "category": "bean"
   },
   {
@@ -60,7 +60,7 @@
     "name": "Robusta Blend",
     "description": "Bold and earthy with a strong caffeine kick. Perfect for morning brews. 12oz bag.",
     "price": 13.75,
-    "imageSrc": "/images/Products/menuBagRobusta.png",
+    "imageSrc": "/src/images/Products/menuBagRobusta.png",
     "category": "bean"
   },
   {
@@ -68,7 +68,7 @@
     "name": "Mountain Reserve",
     "description": "High-altitude beans with complex flavor profile and subtle fruit notes. 12oz bag.",
     "price": 16.5,
-    "imageSrc": "/images/Products/menuBagmtReserve.png",
+    "imageSrc": "/src/images/Products/menuBagmtReserve.png",
     "category": "bean"
   },
   {
@@ -76,7 +76,7 @@
     "name": "Morning Sunrise",
     "description": "Bright and refreshing medium roast with citrus undertones. 12oz bag.",
     "price": 15.25,
-    "imageSrc": "/images/Products/menuBagExcelsa.png",
+    "imageSrc": "/src/images/Products/menuBagExcelsa.png",
     "category": "bean"
   },
   {
@@ -84,7 +84,7 @@
     "name": "Sunset Blend",
     "description": "Rich evening blend with notes of dark chocolate and spice. 12oz bag.",
     "price": 15.0,
-    "imageSrc": "/images/Products/menuBagSunsetBlend.png",
+    "imageSrc": "/src/images/Products/menuBagSunsetBlend.png",
     "category": "bean"
   },
   {
@@ -92,7 +92,7 @@
     "name": "Decaf Supreme",
     "description": "All the flavor without the caffeine. Notes of caramel and nuts. 12oz bag.",
     "price": 14.75,
-    "imageSrc": "/images/Products/menuBagLiberica.png",
+    "imageSrc": "/src/images/Products/menuBagLiberica.png",
     "category": "bean"
   }
 ]
