@@ -1,22 +1,18 @@
+/* Base Navbar Styles */
 .navbar {
     position: fixed;
-    /* Change to fixed */
     width: 100%;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    /* Always keep it centered */
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    /* let the pseudo-element show through */
     padding: 1rem 2rem;
-    z-index: 10;
-    /* ensure navbar sits above page content */
+    z-index: 1000;
     transition: all 0.3s ease;
-    /* Focus on vertical movement and other visual properties */
-    transition-property: top, width, background-color, box-shadow, border-radius;
+    box-sizing: border-box;
 }
 
 /* Remove the slideDown animation */
@@ -27,7 +23,6 @@
     align-items: center;
     font-size: 1.25rem;
     color: #EAD2AC;
-    /* 30% Soft Beige */
     transition: color 1s ease;
     font-weight: 700;
 }
@@ -44,7 +39,7 @@
     color: rgb(247, 156, 46);
 }
 
-/* Centered navigation links */
+/* Navigation Links */
 .navCenter {
     display: flex;
     align-items: center;
@@ -55,16 +50,63 @@
 
 .navCenter a {
     color: #EAD2AC;
-    /* Soft Beige */
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+    position: relative;
 }
 
 .navCenter a:hover {
     color: #ff9d4e;
+    font-weight: 600;
+}
+
+/* Mobile Menu Button */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #9e571d;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 0.5rem;
+}
+
+/* Cart Badge */
+.cartBadge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #D98D50;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
     font-weight: bold;
-    font-size: 1.01rem;
+}
+
+.cartContainer {
+    position: relative;
+    display: inline-block;
+}
+
+/* Mobile Icons */
+.mobileIcons {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.cartIcon {
+    position: relative;
+    cursor: pointer;
 }
 
 /* Right-side icons */
@@ -76,7 +118,6 @@
 
 .navRight .icon {
     color: #ff9d4e;
-    /* 10% Bright Orange */
     font-size: 1.25rem;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -84,7 +125,6 @@
 
 .navRight .icon:hover {
     color: #ff9d4e;
-    /* font-weight: bold; */
     scale: 1.2;
 }
 
@@ -94,12 +134,9 @@
     position: absolute;
     inset: 0;
     background: url('/background2.png') center/cover no-repeat;
-    /* updated path */
     filter: blur(8px) brightness(0.7) contrast(1.1);
     z-index: -1;
-    /* place behind navbar content */
     transition: all 0.5s ease;
-    /* Make sure these specific properties transition smoothly */
     transition-property: width, top, left, transform, background-color, box-shadow, border-radius;
     transition-duration: 0.5s;
     transition-timing-function: ease;
@@ -107,24 +144,17 @@
 
 /* Floating navigation styles */
 .floatingNav {
-    position: fixed;
     top: 1rem;
-    /* This controls the vertical "detaching" effect */
+    left: 50%;
+    transform: translateX(-50%);
     width: 95%;
-    /* transform: translateX(-50%);  Keep this for proper centering */
-    margin: 0;
-    /* Remove margin since we're using transform */
+    max-width: 1400px;
     border-radius: 1rem;
     background: rgba(255, 255, 255, 0.8);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    /* Add this line for Safari support */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    /* Remove the animation property */
-    transition: all 0.5s ease;
-    transition-property: top, width, background-color, box-shadow, border-radius;
-    /* Remove transform from transition properties since we want it to stay centered */
 }
 
 .floatingNav::before {
@@ -139,4 +169,92 @@
 
 .floatingNav .icon {
     color: hsl(12, 54%, 31%);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .navCenter {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navCenter {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 5rem 2rem 2rem;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        gap: 1.5rem;
+        overflow-y: auto;
+    }
+
+    .navCenter.mobileMenuOpen {
+        right: 0;
+    }
+
+    .navCenter a {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 0;
+        font-size: 1.1rem;
+    }
+
+    .navRight {
+        display: none;
+    }
+
+    .mobileIcons {
+        display: flex;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+        justify-content: center;
+    }
+
+    .floatingNav {
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .floatingNav::before {
+        border-radius: 0;
+    }
+}
+
+/* Dark overlay when menu is open */
+.navOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.navOverlay.active {
+    display: block;
 }

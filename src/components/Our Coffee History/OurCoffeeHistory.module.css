@@ -58,10 +58,11 @@
   position: relative;
   width: 100%;
   max-width: 1700px;
-  height: 700px;
+  min-height: 700px; /* Changed from height to min-height */
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto 4rem; /* Added bottom margin */
+  padding-bottom: 2rem; /* Added padding to prevent content from being cut off */
 }
 
 /* Gallery Container */
@@ -302,6 +303,11 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .coffee-journey {
+    min-height: auto; /* Allow height to adjust to content */
+    margin-bottom: 2rem; /* Reduce bottom margin on mobile */
+    padding-bottom: 0; /* Remove bottom padding on mobile */
+  }
   .gallery-container {
     max-width: 400px;
   }
@@ -339,5 +345,38 @@
   .detail-image {
     width: 100%;
     max-width: none;
+  }
+
+  /* Add spacing between scene detail and quality values on mobile */
+  .hover-details {
+    margin-bottom: 3rem;
+    min-height: 300px; /* Reduced from 400px to prevent excessive space */
+    position: relative;
+    z-index: 2; /* Ensure it stays above other elements */
+  }
+  
+  .scene-detail {
+    position: relative;
+    margin: 2rem 0;
+    background: rgba(46, 87, 77, 0.9); /* Add slight background for better readability */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .quality-values {
+    position: relative;
+    z-index: 1;
+    padding: 2rem 1rem 1rem;
+    margin-top: 0;
+    background: #2E574D; /* Match page background */
+  }
+  
+  .values-grid {
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .value-card {
+    margin-bottom: 1.5rem;
   }
 }
