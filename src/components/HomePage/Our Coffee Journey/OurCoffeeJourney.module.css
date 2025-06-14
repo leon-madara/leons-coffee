@@ -22,7 +22,8 @@
 .title {
   position: relative;
   font-size: 3rem;
-  color: rgb(245, 239, 228); /* Tan */
+  color: rgb(245, 239, 228);
+  /* Tan */
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 700;
@@ -36,9 +37,11 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -15px;
-  width: 0; /* Start with no width */
+  width: 0;
+  /* Start with no width */
   height: 4px;
-  background: #D98D50; /* Burnt Orange */
+  background: #D98D50;
+  /* Burnt Orange */
   animation: underlineGrow 0.6s ease-in-out forwards;
 }
 
@@ -71,6 +74,7 @@
   from {
     width: 0;
   }
+
   to {
     width: 80px;
   }
@@ -91,11 +95,44 @@
   z-index: 2;
 }
 
+/* Base styles for historySummary */
 .historySummary {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  padding: 2rem;
   height: auto;
   z-index: 2;
   position: relative;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
+  .historySummary {
+    max-width: 90%;
+    padding: 1.5rem;
+    max-height: 400px;
+  }
+}
+
+/* Small tablet breakpoint */
+@media (max-width: 768px) {
+  .historySummary {
+    max-width: 95%;
+    padding: 1.25rem;
+    max-height: 350px;
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 480px) {
+  .historySummary {
+    padding: 1rem;
+    max-height: 300px;
+    border-radius: 8px;
+  }
 }
 
 .contentArea {

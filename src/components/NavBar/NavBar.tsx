@@ -97,7 +97,7 @@ export const NavBar: React.FC = () => {
                     className={styles.hamburger}
                     onClick={toggleMenu}
                     aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-                    aria-expanded={isMenuOpen}
+                    aria-expanded={isMenuOpen ? "true" : "false"}
                     aria-controls="main-navigation"
                 >
                     {isMenuOpen ? <FiX /> : <FiMenu />}
