@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react'
 import { FiCoffee, FiShoppingCart, FiSearch, FiMenu, FiX } from 'react-icons/fi'
 import { Link, useNavigate } from 'react-router-dom'
 import styles from './NavBar.module.css'
-import floatingLogo from '../../images/favIcon.png'
+// Using public path for favicon
+const floatingLogo = '/images/favicon.png';
 import { useCart } from '../../contexts/CartContext'
 
 export const NavBar: React.FC = () => {

@@ -4,34 +4,20 @@ import { motion } from 'framer-motion';
 import styles from './OurCoffeeHistory.module.css';
 import historyData from './historyData.json';
 
-// Import all history images
-import history1 from '../../images/History/history1.png';
-import history1BG from '../../images/History/history1-!BG.png';
-import history2 from '../../images/History/history2.png';
-import history2BG from '../../images/History/history2-!BG.png';
-import history3 from '../../images/History/history3.png';
-import history3BG from '../../images/History/history3-!BG.png';
-import history4 from '../../images/History/history4.png';
-import history4BG from '../../images/History/history4-!BG.png';
-import history5 from '../../images/History/history5.png';
-import history5BG from '../../images/History/history5-!BG.png';
-import backgroundImage from '../../images/coffee_now_2025.jpg';
-
-// Create a mapping object for easy image access with type safety
+// Image paths in the public directory
 const historyImages: Record<string, string> = {
-  'history1.png': history1,
-  'history1-!BG.png': history1BG,
-  'history2.png': history2,
-  'history2-!BG.png': history2BG,
-  'history3.png': history3,
-  'history3-!BG.png': history3BG,
-  'history4.png': history4,
-  'history4-!BG.png': history4BG,
-  'history5.png': history5,
-  'history5-!BG.png': history5BG,
+  'history1.png': '/images/history/history1.png',
+  'history1-!BG.png': '/images/history/history1-!BG.png',
+  'history2.png': '/images/history/history2.png',
+  'history2-!BG.png': '/images/history/history2-!BG.png',
+  'history3.png': '/images/history/history3.png',
+  'history3-!BG.png': '/images/history/history3-!BG.png',
+  'history4.png': '/images/history/history4.png',
+  'history4-!BG.png': '/images/history/history4-!BG.png',
+  'history5.png': '/images/history/history5.png',
+  'history5-!BG.png': '/images/history/history5-!BG.png',
+  'coffee_now_2025.jpg': '/images/backgrounds/coffee-now-2025.jpg',
 };
-
-// We now use the directly imported backgroundImage instead of a path
 
 const OurCoffeeHistory: React.FC = () => {
   const [activeScene, setActiveScene] = useState(0);
@@ -78,7 +64,7 @@ const OurCoffeeHistory: React.FC = () => {
           {/* Blurred Background Rectangle */}
           <div 
             className={styles['background-rectangle']}
-            style={{ backgroundImage: `url(${backgroundImage})` }}
+            style={{ backgroundImage: `url(${historyImages['coffee_now_2025.jpg']})` }}
           />
           
           {/* Stacked Images */}

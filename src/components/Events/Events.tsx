@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './Events.module.css';
 
 // Import event images
-import coffeeTastingImage from '../../images/EventsImages/CoffeeTastingWorkshop.png';
-import latteArtImage from '../../images/EventsImages/LatteArtCompetition.png';
-import brewingWorkshopImage from '../../images/EventsImages/CoffeeBrewingWorkshop.png';
+const coffeeTastingImage = '/images/events/coffee-tasting-workshop.png';
+const latteArtImage = '/images/events/latte-art-competition.png';
+const brewingWorkshopImage = '/images/events/coffee-brewing-workshop.png';
 
 interface Event {
   id: string;
