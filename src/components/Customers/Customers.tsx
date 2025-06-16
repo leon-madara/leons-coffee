@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './Customers.module.css';
 
-// Import avatar images
-import sarahAvatar from '../../images/CustomerStories/SarahJohnson.png';
-import michaelAvatar from '../../images/CustomerStories/MichaelChen.png';
-import emmaAvatar from '../../images/CustomerStories/EmmaWilson.png';
+// Import avatar images with base URL
+const baseUrl = import.meta.env.BASE_URL;
+const sarahAvatar = `${baseUrl}images/customers/sarah-johnson.png`;
+const michaelAvatar = `${baseUrl}images/customers/michael-chen.png`;
+const emmaAvatar = `${baseUrl}images/customers/emma-wilson.png`;
 
 const Customers: React.FC = () => {
   return (

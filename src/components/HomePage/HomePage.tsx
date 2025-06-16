@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom'
 import styles from './homepage.module.css'
 import infoStyles from './info.module.css'
 
-// Import images with correct relative path
-import cupImage from '../../images/coffeeCup-2.png'
-import baristaImage from '../../images/perfectBarista-!BG.png'
-import coffeeThemeImage from '../../images/coffeefav.png'
+// Image paths in the public directory
+const cupImage = '/images/icons/coffee-cup-2.png';
+const baristaImage = '/images/barista/perfect-barista-no-bg.png';
+const coffeeThemeImage = '/images/favicon.png';
 
 const HomePage: React.FC = () => {
   const [hovered, setHovered] = useState(false)
@@ -15,6 +15,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div className={styles.container}>
+      
       {/* Hero Section */}
       <div className={styles.hero}>
         {/* Left: Tagline & Button */}
